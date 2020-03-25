@@ -1,4 +1,4 @@
-# [Video.js - HTML5 Video Player]
+#Video.js - HTML5 Video Player]
 
 [![Build Status][travis-icon]][travis-link]
 [![Coverage Status][coveralls-icon]][coveralls-link]
