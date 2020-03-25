@@ -1,158 +1,88 @@
-#Video.js - HTML5 Video Player]
+# Project Title
 
-[![Build Status][travis-icon]][travis-link]
-[![Coverage Status][coveralls-icon]][coveralls-link]
-[![Greenkeeper badge](https://badges.greenkeeper.io/videojs/video.js.svg)](https://greenkeeper.io/)
-[![Slack Status][slack-icon]][slack-link]
+One Paragraph of project description goes here
 
-[![NPM][npm-icon]][npm-link]
+## Getting Started
 
-> Video.js is a web video player built from the ground up for an HTML5 world. It supports HTML5 and Flash video, as well as YouTube and Vimeo (through [plugins][plugins]). It supports video playback on desktops and mobile devices. This project was started mid 2010, and the player is now used on over ~~50,000~~ ~~100,000~~ ~~200,000~~ [400,000 websites][builtwith].
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Table of Contents
+### Prerequisites
 
-* [Quick Start](#quick-start)
-* [Contributing](#contributing)
-* [Code of Conduct](#code-of-conduct)
-* [License](#license)
+What things you need to install the software and how to install them
 
-## Quick Start
-
-Thanks to the awesome folks over at [Fastly][fastly], there's a free, CDN hosted version of Video.js that anyone can use. Add these tags to your document's `<head>`:
-
-```html
-<link href="//vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
-<script src="//vjs.zencdn.net/7.3.0/video.min.js"></script>
+```
+Give examples
 ```
 
-> For the latest version of video.js and URLs to use, check out the [Getting Started][getting-started] page on our website.
+### Installing
 
-Video.js version 7 (and newer) CDN builds do not send any data to Google Analytics.
+A step by step series of examples that tell you how to get a development env running
 
-In older versions of Video.js (6 and earlier), in the `vjs.zencdn.net` CDN-hosted versions we include a [stripped down Google Analytics pixel](https://github.com/videojs/cdn/blob/master/src/analytics.js) that tracks a random sampling (currently 1%) of players loaded from the CDN. This allows us to see (roughly) what browsers are in use in the wild, along with other useful metrics such as OS and device. If you'd like to disable analytics, you can simply include the following global before including Video.js via the free CDN:
+Say what the step will be
 
-```html
-<script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+```
+Give the example
 ```
 
-Alternatively, you can include Video.js by getting it from [npm](https://videojs.com/getting-started/#download-npm), downloading from [GitHub releases](https://github.com/videojs/video.js/releases) or by including it via [unpkg](https://unpkg.com) or another JavaScript CDN like CDNjs. These releases _do not_ include Google Analytics tracking at all.
+And repeat
 
-```html
-<!-- unpkg : use the latest version of Video.js -->
-<link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
-<script src="https://unpkg.com/video.js/dist/video.min.js"></script>
-
-<!-- unpkg : use a specific version of Video.js (change the version numbers as necessary) -->
-<link href="https://unpkg.com/video.js@6.11.0/dist/video-js.min.css" rel="stylesheet">
-<script src="https://unpkg.com/video.js@6.11.0/dist/video.min.js"></script>
-
-<!-- cdnjs : use a specific version of Video.js (change the version numbers as necessary) -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video-js.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.min.js"></script>
+```
+until finished
 ```
 
-Next, using Video.js is as simple as creating a `<video>` element, but with an additional `data-setup` attribute. At a minimum, this attribute must have a value of `'{}'`, but it can include any Video.js [options][options] - just make sure it contains valid JSON!
+End with an example of getting some data out of the system or using it for a little demo
 
-```html
-<video
-    id="my-player"
-    class="video-js"
-    controls
-    preload="auto"
-    poster="//vjs.zencdn.net/v/oceans.png"
-    data-setup='{}'>
-  <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
-  <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
-  <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
-  <p class="vjs-no-js">
-    To view this video please enable JavaScript, and consider upgrading to a
-    web browser that
-    <a href="https://videojs.com/html5-video-support/" target="_blank">
-      supports HTML5 video
-    </a>
-  </p>
-</video>
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
 ```
 
-When the page loads, Video.js will find this element and automatically setup a player in its place.
+### And coding style tests
 
-If you don't want to use automatic setup, you can leave off the `data-setup` attribute and initialize a `<video>` element manually using the `videojs` function:
+Explain what these tests test and why
 
-```js
-var player = videojs('my-player');
+```
+Give an example
 ```
 
-The `videojs` function also accepts an `options` object and a callback to be invoked
- when the player is ready:
+## Deployment
 
-```js
-var options = {};
+Add additional notes about how to deploy this on a live system
 
-var player = videojs('my-player', options, function onPlayerReady() {
-  videojs.log('Your player is ready!');
+## Built With
 
-  // In this context, `this` is the player that was created by Video.js.
-  this.play();
-
-  // How about an event listener?
-  this.on('ended', function() {
-    videojs.log('Awww...over so soon?!');
-  });
-});
-```
-
-If you're ready to dive in, the [Getting Started][getting-started] page and [documentation][docs] are the best places to go for more information. If you get stuck, head over to our [Slack channel][slack-link]!
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
-Video.js is a free and open source library, and we appreciate any help you're willing to give - whether it's fixing bugs, improving documentation, or suggesting new features. Check out the [contributing guide][contributing] for more!
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-_Video.js uses [BrowserStack][browserstack] for compatibility testing._
+## Versioning
 
-## [Code of Conduct][coc]
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-Please note that this project is released with a [Contributor Code of Conduct][coc]. By participating in this project you agree to abide by its terms.
+## Authors
 
-## [License][license]
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-Video.js is [licensed][license] under the Apache License, Version 2.0.
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-[browserstack]: https://browserstack.com
+## License
 
-[builtwith]: https://trends.builtwith.com/media/VideoJS
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-[contributing]: CONTRIBUTING.md
+## Acknowledgments
 
-[coveralls-icon]: https://coveralls.io/repos/github/videojs/video.js/badge.svg?branch=master
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
 
-[coveralls-link]: https://coveralls.io/github/videojs/video.js?branch=master
-
-[docs]: https://docs.videojs.com
-
-[fastly]: https://www.fastly.com/
-
-[getting-started]: https://videojs.com/getting-started/
-
-[license]: LICENSE
-
-[logo]: https://videojs.com/logo-white.png
-
-[npm-icon]: https://nodei.co/npm/video.js.png?downloads=true&downloadRank=true
-
-[npm-link]: https://nodei.co/npm/video.js/
-
-[options]: docs/guides/options.md
-
-[plugins]: https://videojs.com/plugins/
-
-[slack-icon]: http://slack.videojs.com/badge.svg
-
-[slack-link]: http://slack.videojs.com
-
-[travis-icon]: https://travis-ci.org/videojs/video.js.svg?branch=master
-
-[travis-link]: https://travis-ci.org/videojs/video.js
-
-[vjs]: https://videojs.com
-
-[coc]: CODE_OF_CONDUCT.md
