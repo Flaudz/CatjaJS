@@ -1,6 +1,6 @@
-# Project Title
+# CatjaJS
 
-One Paragraph of project description goes here
+This is a library that makes it easy to handle javascript
 
 ## Getting Started
 
