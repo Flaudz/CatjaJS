@@ -21,6 +21,8 @@ selecDom("").event();
 
 selecDom("").hide();
 
+selecDom("").rainbowImg("");
+
 slideShow("", 2);
 
 lazy("", 200, 300);
@@ -60,6 +62,11 @@ selecDom("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
 ##### How to hide a element
 ```javascript
  selecDom(".hideMe").hide();
+```
+
+##### How to add a rainbow effect on your image
+```javascript
+ selecDom(".image").rainbowImg("2s");
 ```
 
 ##### How to add a slideshow
