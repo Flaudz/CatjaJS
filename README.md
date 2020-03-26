@@ -23,12 +23,6 @@ createElm("", "").class("");
 
 selectElm(Element to target);
 
-selectElm("")text("");
-
-selectElm("").setAttr());
-
-selectElm("").event();
-
 selectElm("").hide();
 
 selectElm("").rainbowImg("");
@@ -74,7 +68,7 @@ selectElm("h1").text("Ohh boy, This a nice h1 text");
 ##### Set a attribute
 
 ```javascript
- selectElm("h1").setAttr("class", "Cola");
+selectElm("h1").setAttr("class", "Cola");
 ```
 
 ##### Set alt text
@@ -92,19 +86,19 @@ selectElm("img").src("linkToPicture");
 ##### How to addEventListener
 
 ```javascript
- selectElm("figure").event("click", () => {
+selectElm("figure").event("click", () => {
 	alert("What an easy way to add an event listener");
 });
 ```
 
 ##### How to hide a element
 ```javascript
- selectElm(".hideMe").hide();
+selectElm(".hideMe").hide();
 ```
 
 ##### How to add a rainbow effect on your image
 ```javascript
- selectElm(".image").rainbowImg("2s");
+selectElm(".image").rainbowImg("2s");
 ```
 
 ##### How to add a typeEffect to your text
@@ -120,18 +114,18 @@ selectElm("").popup(1.2);
 ##### How to add a slideshow
 ###### You have to target your images parent/container
 ```javascript
- slideShow(".slideshow", 1);
+slideShow(".slideshow", 1);
 ```
 
 ##### How to add lazyloading to you images
 ###### Insted of the src attribute use the data-src attribute in the html
 ```javascript
- lazy("img", 200, 300);
+lazy("img", 200, 300);
 ```
 
 ##### ChromeCast
 ```javascript
- chromeCast("Video.mp4", ".castBtn");
+chromeCast("Video.mp4", ".castBtn");
 ```
 
 
