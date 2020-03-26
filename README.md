@@ -15,17 +15,17 @@ You will need to link to our Script file in the buttom of your body
 ## Features
 
 ```javascript
-selecDom(Element to target);
+selectElm(Element to target);
 
-selecDom("").target().innerHtml = "";
+selectElm("").target().innerHtml = "";
 
-selecDom("").setAttr());
+selectElm("").setAttr());
 
-selecDom("").event();
+selectElm("").event();
 
-selecDom("").hide();
+selectElm("").hide();
 
-selecDom("").rainbowImg("");
+selectElm("").rainbowImg("");
 
 slideShow("", 2);
 
@@ -40,37 +40,37 @@ chromeCast("", "");
 ##### Save a element
 
 ```javascript
-const Element = selecDom("h1");
+const Element = selectElm("h1");
 ```
 
 ##### InnerHTML
 
 ```javascript
-selecDom("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
+selectElm("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
 ```
 
 ##### Set a attribute
 
 ```javascript
- selecDom("h1").setAttr("class", "Cola");
+ selectElm("h1").setAttr("class", "Cola");
 ```
 
 ##### How to addEventListener
 
 ```javascript
- selecDom("figure").event("click", () => {
+ selectElm("figure").event("click", () => {
 	alert("What an easy way to add an event listener");
 });
 ```
 
 ##### How to hide a element
 ```javascript
- selecDom(".hideMe").hide();
+ selectElm(".hideMe").hide();
 ```
 
 ##### How to add a rainbow effect on your image
 ```javascript
- selecDom(".image").rainbowImg("2s");
+ selectElm(".image").rainbowImg("2s");
 ```
 
 ##### How to add a slideshow
@@ -173,11 +173,11 @@ figure {
 ```
 # JavaScript
 ```javascript
-selecDom("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
+selectElm("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
 
-selecDom("h1").setAttr("class", "Cola");
+selectElm("h1").setAttr("class", "Cola");
 
-selecDom("figure").event("click", (e) => {
+selectElm("figure").event("click", (e) => {
 	alert("asd");
 });
 
@@ -190,6 +190,6 @@ chromeCast(
 	".castBtn"
 );
 
-selecDom(".image").rainbowImg("2s");
+selectElm(".image").rainbowImg("2s");
 
 ```
