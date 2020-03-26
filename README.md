@@ -33,6 +33,8 @@ selectElm("").hide();
 
 selectElm("").rainbowImg("");
 
+selectElm("").typeEffect(1, "");
+
 slideShow("", 2);
 
 lazy("", 200, 300);
@@ -101,6 +103,11 @@ selectElm("img").src("linkToPicture");
 ##### How to add a rainbow effect on your image
 ```javascript
  selectElm(".image").rainbowImg("2s");
+```
+
+##### How to add a typeEffect to your text
+```javascript
+selectElm("").typeEffect(1, "Text");
 ```
 
 ##### How to add a slideshow
@@ -224,11 +231,14 @@ chromeCast(
 	".castBtn"
 );
 
-selectElm(".image").rainbowImg(".3s");
+selectElm(".image").rainbowImg(".5s");
 
-createElm("img", "body").class("ClassList");
+createElm("img", "body").class("image");
 
-selectElm(".ClassList").src("asd");
+selectElm(".image").src("https://picsum.photos/500?random=1");
 
-selectElm(".ClassList").alt("Billede");
+selectElm(".image").alt("Picture");
+
+selectElm("h1").typeEffect(1, "Type Effect");
+
 ```
