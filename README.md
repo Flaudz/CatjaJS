@@ -35,6 +35,8 @@ selectElm("").rainbowImg("");
 
 selectElm("").typeEffect(1, "");
 
+selectElm("").popup(1);
+
 slideShow("", 2);
 
 lazy("", 200, 300);
@@ -110,6 +112,11 @@ selectElm("img").src("linkToPicture");
 selectElm("").typeEffect(1, "Text");
 ```
 
+##### How to make elements have a popup effect
+```javascript
+selectElm("").popup(1.2);
+```
+
 ##### How to add a slideshow
 ###### You have to target your images parent/container
 ```javascript
@@ -178,9 +185,9 @@ selectElm("").typeEffect(1, "Text");
 ## CSS
 ```html
 <style>
-	body {
+		body {
 		text-align: center;
-	}
+		}
 
 	figure img {
 		height: 750px;
@@ -199,6 +206,17 @@ selectElm("").typeEffect(1, "Text");
 		max-height: 500px;
 	}
 
+	.popup {
+		opacity: 0;
+		transform: translateY(20px);
+		transition: 0.8s all ease-in-out;
+	}
+
+	.popup-appear {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
 	@keyframes color-rotate {
 		from {
 			filter: hue-rotate(0deg);
@@ -207,7 +225,6 @@ selectElm("").typeEffect(1, "Text");
 			filter: hue-rotate(360deg);
 		}
 	}
-
 }
 
 </style>
@@ -239,6 +256,8 @@ selectElm(".image").src("https://picsum.photos/500?random=1");
 
 selectElm(".image").alt("Picture");
 
-selectElm("h1").typeEffect(1, "Type Effect");
+selectElm(".WTF").typeEffect(1, "Type Effect");
+
+selectElm(".image").popup(1.2);
 
 ```
