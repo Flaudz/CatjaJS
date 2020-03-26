@@ -142,7 +142,7 @@ selectElm("img").src("linkToPicture");
 			<img src="https://picsum.photos/200/300?random=4" />
 			<img src="https://picsum.photos/200/300?random=5" />
 		</figure>
-		<div class="lazyloading">
+		<div class="pictureContainer">
 			<img data-src="https://picsum.photos/500?random=1" />
 			<img data-src="https://picsum.photos/500?random=2" />
 			<img data-src="https://picsum.photos/500?random=3" />
