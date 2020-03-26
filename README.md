@@ -1,6 +1,8 @@
 # CatjaJS
 
-This is a library that makes it easy to handle javascript
+This is a project that i have been working on after school.
+
+Been in the works since -25-03-2020
 
 ## Get it in your project
 
