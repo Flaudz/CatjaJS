@@ -141,32 +141,36 @@ selectElm("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
 ## CSS
 ```html
 <style>
-body {
-	text-align: center;
-}
-
-figure img {
-	width: 8em;
-	height: 12em;
-	transition: width 2s, height 2s, transform 2s;
-}
-
-figure {
-	margin: 2% auto;
-}
-
-.lazyloading img {
-	width: 25%;
-	height: 25%;
-}
-
-@keyframes color-rotate {
-	from {
-		filter: hue-rotate(0deg);
+	body {
+		text-align: center;
 	}
-	to {
-		filter: hue-rotate(360deg);
+
+	figure img {
+		height: 750px;
+		width: 500px;
+		transition: width 2s, height 2s, transform 2s;
 	}
+
+	figure {
+		margin: 2% auto;
+	}
+
+	.lazyloading img {
+		width: 100%;
+		max-width: 500px;
+		height: 100%;
+		max-height: 500px;
+	}
+
+	@keyframes color-rotate {
+		from {
+			filter: hue-rotate(0deg);
+		}
+		to {
+			filter: hue-rotate(360deg);
+		}
+	}
+
 }
 
 </style>
