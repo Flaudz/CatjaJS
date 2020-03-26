@@ -15,9 +15,13 @@ You will need to link to our Script file in the buttom of your body
 ## Features
 
 ```javascript
+createElm("", "");
+
+createElm("", "").class("");
+
 selectElm(Element to target);
 
-selectElm("").target().innerHtml = "";
+selectElm("")text("");
 
 selectElm("").setAttr());
 
@@ -37,22 +41,46 @@ chromeCast("", "");
 
 ## Example Code
 
-##### Save a element
+##### Create a element
 
 ```javascript
-const Element = selectElm("h1");
+createElm("div", "body");
 ```
 
-##### InnerHTML
+##### Create a element with a class
 
 ```javascript
-selectElm("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
+createElm("div", "body").class("className");
+```
+
+##### Select a element
+
+```javascript
+selectElm("h1");
+```
+
+##### Set the text
+
+```javascript
+selectElm("h1").text("Ohh boy, This a nice h1 text");
 ```
 
 ##### Set a attribute
 
 ```javascript
  selectElm("h1").setAttr("class", "Cola");
+```
+
+##### Set alt text
+
+```javascript
+selectElm("img").alt("Picture");
+```
+
+##### Set src
+
+```javascript
+selectElm("img").src("linkToPicture");
 ```
 
 ##### How to addEventListener
@@ -177,23 +205,28 @@ selectElm("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
 ```
 # JavaScript
 ```javascript
-selectElm("h1").target().innerHTML = "Ohh boy, This a nice h1 text";
+selectElm("h1").text("Ohh boy, This a nice h1 text");
 
 selectElm("h1").setAttr("class", "Cola");
 
 selectElm("figure").event("click", (e) => {
-	alert("asd");
+	alert("Event");
 });
 
-slideShow("figure", 5);
+slideShow("figure", 2);
 
-lazy(".lazyloading img");
+lazy(".pictureContainer img");
 
 chromeCast(
 	"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
 	".castBtn"
 );
 
-selectElm(".image").rainbowImg("2s");
+selectElm(".image").rainbowImg(".3s");
 
+createElm("img", "body").class("ClassList");
+
+selectElm(".ClassList").src("asd");
+
+selectElm(".ClassList").alt("Billede");
 ```
