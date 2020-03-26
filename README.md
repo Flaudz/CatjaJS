@@ -183,7 +183,7 @@ selectElm("img").src("linkToPicture");
 		margin: 2% auto;
 	}
 
-	.lazyloading img {
+	.pictureContainer img {
 		width: 100%;
 		max-width: 500px;
 		height: 100%;
