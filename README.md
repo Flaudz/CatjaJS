@@ -4,6 +4,28 @@ This is a project that i have been working on after school.
 
 Been in the works since -25-03-2020
 
+## What will be easier to work with in CatjaJS?
+
+### Feauters that will be easier to add to your project
+- You can add a slideshow in your project with one line of javascript.
+
+- You can also add lazyloading to your slideshow with one line of javascript.
+
+- And you can also add a chromecast feauter with one line of javascript.
+
+### Effects you can add to your project with CatjaJS
+- You can add a hover rainbow effect on your picturs with one line of javascript.
+
+- You can add a popup effect on images and text with one line of javascript.
+
+- You can also add a type effect to your text with one line of javascript.
+
+## What did i mean?
+If you notice in every line above this text has the same ending (with one line of javascript)
+And that is becurse what we want with this library is that it is easier
+to add effect and feauters with only one line of javascript.
+That is our goal
+
 ## Get it in your project
 
 You will need to link to our StyleSheet file in the head section of you html file
