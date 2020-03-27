@@ -10,7 +10,7 @@ You will need to link to our StyleSheet file in the head section of you html fil
 ```html
  <link rel="stylesheet" href="https://nico936d.aspitcloud.dk/catjaJS.css" />
 ```
-You will need to link to our Script file in the buttom of your body
+You will need to link to our Script file in the bottom of your body
  ```html
  <script src="https://nico936d.aspitcloud.dk/catjaJS.js"></script>
  ```
