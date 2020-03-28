@@ -1,8 +1,9 @@
 # CatjaJS
 
-This is a project that i have been working on after school.
+Hello there, my name is Casper👋
+and i am the developer behind CatjaJS.
 
-Been in the works since -25-03-2020
+I have been working on this project since 25-03-2020⌚
 
 ## What will be easier to work with in CatjaJS?
 
@@ -24,7 +25,7 @@ Been in the works since -25-03-2020
 If you notice in every line above this text has the same ending (with one line of javascript)
 And that is becurse what we want with this library is that it is easier
 to add effect and feauters with only one line of javascript.
-That is our goal
+That is our goal😉
 
 ## Get it in your project
 
