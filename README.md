@@ -202,9 +202,17 @@ chromeCast("Video.mp4", ".castBtn");
 ## CSS
 ```html
 <style>
-	.show {
-		display: block;
-		animation: slideShow 2s;
+	.slideShowContainer {
+		width: fit-content;
+		height: fit-content;
+	}
+
+	.slideShowContainer img {
+		display: none;
+	}
+
+	.showSlideShowImg {
+		display: block !important;
 		opacity: 0;
 	}
 
@@ -236,7 +244,6 @@ chromeCast("Video.mp4", ".castBtn");
 			opacity: 0;
 		}
 	}
-}
 </style>
 ```
 # JavaScript
