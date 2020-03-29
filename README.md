@@ -201,26 +201,10 @@ chromeCast("Video.mp4", ".castBtn");
  
 ## CSS
 ```html
-<style>
-		body {
-		text-align: center;
-		}
-
-	figure img {
-		height: 750px;
-		width: 500px;
-		transition: width 2s, height 2s, transform 2s;
-	}
-
-	figure {
-		margin: 2% auto;
-	}
-
-	.pictureContainer img {
-		width: 100%;
-		max-width: 500px;
-		height: 100%;
-		max-height: 500px;
+	.show {
+		display: block;
+		animation: slideShow 2s;
+		opacity: 0;
 	}
 
 	.popup {
@@ -242,9 +226,16 @@ chromeCast("Video.mp4", ".castBtn");
 			filter: hue-rotate(360deg);
 		}
 	}
-}
 
-</style>
+	@keyframes slideShow {
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+}
 ```
 # JavaScript
 ```javascript
