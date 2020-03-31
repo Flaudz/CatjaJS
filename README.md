@@ -56,7 +56,7 @@ selectElm("").popup(1);
 
 slideShow("", 2);
 
-lazy("", 200, 300);
+lazy("");
 
 chromeCast("", "");
 ```
@@ -143,7 +143,7 @@ slideShow(".slideshow", 1);
 ##### How to add lazyloading to you images
 ###### Insted of the src attribute use the data-src attribute in the html
 ```javascript
-lazy("img", 200, 300);
+lazy("img");
 ```
 
 ##### ChromeCast
