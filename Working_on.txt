@@ -1,0 +1,4 @@
+This is things im working on
+
+1: Search function.
+  Im working on the search function so it sort after the best match.
