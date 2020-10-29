@@ -7,12 +7,12 @@ I have been working on this project since 25-03-2020⌚
 
 ## What will be easier to work with in CatjaJS?
 
-### Feauters that will be easier to add to your project
+### Features that will be easier to add to your project
 - You can add a slideshow in your project with one line of javascript.
 
-- You can also add lazyloading to your slideshow with one line of javascript.
+- You can also add popup effect with one line of javascript.
 
-- And you can also add a chromecast feauter with one line of javascript.
+- And you can also add a chromecast feature with one line of javascript.
 
 ### Effects you can add to your project with CatjaJS
 - You can add a hover rainbow effect on your picturs with one line of javascript.
@@ -24,7 +24,7 @@ I have been working on this project since 25-03-2020⌚
 ## What did i mean?
 If you notice in every line above this text has the same ending (with one line of javascript)
 And that is becurse what we want with this library is that it is easier
-to add effect and feauters with only one line of javascript.
+to add effect and features with only one line of javascript.
 That is our goal😉
 
 ## Get it in your project
@@ -55,8 +55,6 @@ selectElm("").typeEffect(1, "");
 selectElm("").popup(1);
 
 slideShow("", 2);
-
-lazy("");
 
 chromeCast("", "");
 ```
@@ -140,12 +138,6 @@ selectElm("").popup(1.2);
 slideShow(".slideshow", 1);
 ```
 
-##### How to add lazyloading to you images
-###### Insted of the src attribute use the data-src attribute in the html
-```javascript
-lazy("img");
-```
-
 ##### ChromeCast
 ```javascript
 chromeCast("Video.mp4", ".castBtn");
@@ -176,21 +168,21 @@ chromeCast("Video.mp4", ".castBtn");
 			<img src="https://picsum.photos/200/300?random=5" />
 		</figure>
 		<div class="pictureContainer">
-			<img data-src="https://picsum.photos/500?random=1" />
-			<img data-src="https://picsum.photos/500?random=2" />
-			<img data-src="https://picsum.photos/500?random=3" />
-			<img data-src="https://picsum.photos/500?random=4" />
-			<img data-src="https://picsum.photos/500?random=5" />
-			<img data-src="https://picsum.photos/500?random=6" />
-			<img data-src="https://picsum.photos/500?random=7" />
-			<img data-src="https://picsum.photos/500?random=8" />
-			<img data-src="https://picsum.photos/500?random=9" />
-			<img data-src="https://picsum.photos/500?random=10" />
-			<img data-src="https://picsum.photos/500?random=11" />
-			<img data-src="https://picsum.photos/500?random=12" />
-			<img data-src="https://picsum.photos/500?random=13" />
-			<img data-src="https://picsum.photos/500?random=14" />
-			<img class="image" data-src="https://picsum.photos/600?random=15" />
+			<img src="https://picsum.photos/500?random=1" />
+			<img src="https://picsum.photos/500?random=2" />
+			<img src="https://picsum.photos/500?random=3" />
+			<img src="https://picsum.photos/500?random=4" />
+			<img src="https://picsum.photos/500?random=5" />
+			<img src="https://picsum.photos/500?random=6" />
+			<img src="https://picsum.photos/500?random=7" />
+			<img src="https://picsum.photos/500?random=8" />
+			<img src="https://picsum.photos/500?random=9" />
+			<img src="https://picsum.photos/500?random=10" />
+			<img src="https://picsum.photos/500?random=11" />
+			<img src="https://picsum.photos/500?random=12" />
+			<img src="https://picsum.photos/500?random=13" />
+			<img src="https://picsum.photos/500?random=14" />
+			<img class="image" src="https://picsum.photos/600?random=15" />
 		</div>
 		<button class="castBtn">Cast video</button>
 		<script src="https://nico936d.aspitcloud.dk/catjaJS.js"></script>
@@ -257,8 +249,6 @@ selectElm("figure").event("click", (e) => {
 });
 
 slideShow("figure", 2);
-
-lazy(".pictureContainer img");
 
 chromeCast(
 	"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
